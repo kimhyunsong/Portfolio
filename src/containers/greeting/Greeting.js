@@ -56,7 +56,7 @@ export default function Greeting() {
             ) : (
               <img
                 alt="man sitting on table"
-                src={require("../../assets/images/manOnTable.svg")}
+                src={require("../../assets/images/KakaoTalk_20220523_213343348.jpg")}
               ></img>
             )}
           </div>

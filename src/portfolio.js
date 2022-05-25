@@ -16,14 +16,14 @@ const splashScreen = {
 // Summary And Greeting Section
 
 const illustration = {
-  animated: true // Set to false to use static SVG
+  animated: false // Set to false to use static SVG
 };
 
 const greeting = {
   username: "Kim hyunsong",
-  title: "안녕하세요 김현송입니다.",
+  title: "안녕하세요 공유하는 개발자 김현송입니다.",
   subTitle: emoji(
-    "A passionate Full Stack Software Developer 🚀 having an experience of building Web applications with JavaScript / Reactjs / and some other cool libraries and frameworks."
+    " 다양한 플랫폼을 빠르게 습득하여 완성도 높은 프로젝트를 위해 팀원들과 공유하고 소통합니다."
   ),
   // resumeLink:
     // "https://drive.google.com/file/d/1ofFdKF_mqscH8WvXkSObnVvC9kK7Ldlu/view?usp=sharing", // Set to empty to hide the button
@@ -33,13 +33,8 @@ const greeting = {
 // Social Media Links
 
 const socialMediaLinks = {
-  github: "https://github.com/saadpasta",
-  linkedin: "https://www.linkedin.com/in/saadpasta/",
-  gmail: "saadpasta70@gmail.com",
-  gitlab: "https://gitlab.com/saadpasta",
-  facebook: "https://www.facebook.com/saad.pasta7",
-  medium: "https://medium.com/@saadpasta",
-  stackoverflow: "https://stackoverflow.com/users/10422806/saad-pasta",
+  github: "https://github.com/kimhyunsong",
+
   // Instagram, Twitter and Kaggle are also supported in the links!
   // To customize icons and social links, tweak src/components/SocialMedia
   display: true // Set true to display this section, defaults to false
@@ -49,14 +44,14 @@ const socialMediaLinks = {
 
 const skillsSection = {
   title: "What I do",
-  subTitle: "CRAZY FULL STACK DEVELOPER WHO WANTS TO EXPLORE EVERY TECH STACK",
+  subTitle: "",
   skills: [
     emoji(
-      "⚡ Develop highly interactive Front end / User Interfaces for your web and mobile applications"
+      "⚡ React를 사용해 이벤트 캡처링과 버블링을 효과적으로 다루었습니다."
     ),
-    emoji("⚡ Progressive Web Applications ( PWA ) in normal and SPA Stacks"),
+    emoji("⚡ Firebase를 도입해 이미지 저장 및 관리를 프로젝트에 적용한 경험이 있습니다."),
     emoji(
-      "⚡ Integration of third party services such as Firebase/ AWS / Digital Ocean"
+      "⚡ Front-end 플랫폼에 국한하지 않고 다양한 경험을 추구합니다. ( ROS / Unity )"
     )
   ],
 
@@ -65,57 +60,52 @@ https://fontawesome.com/icons?d=gallery */
 
   softwareSkills: [
     {
-      skillName: "html-5",
-      fontAwesomeClassname: "fab fa-html5"
-    },
-    {
-      skillName: "css3",
-      fontAwesomeClassname: "fab fa-css3-alt"
-    },
-    {
-      skillName: "sass",
-      fontAwesomeClassname: "fab fa-sass"
-    },
-    {
       skillName: "JavaScript",
-      fontAwesomeClassname: "fab fa-js"
+      image : require("./assets/images/javascript.png")
     },
     {
       skillName: "reactjs",
-      fontAwesomeClassname: "fab fa-react"
+      image : require("./assets/images/react.png")
     },
     {
-      skillName: "nodejs",
-      fontAwesomeClassname: "fab fa-node"
+      skillName: "redux",
+      image : require("./assets/images/redux.png")
     },
     {
-      skillName: "swift",
-      fontAwesomeClassname: "fab fa-swift"
+      skillName: "vuejs",
+      image : require("./assets/images/vue.png")
     },
     {
-      skillName: "npm",
-      fontAwesomeClassname: "fab fa-npm"
+      skillName: "express",
+      image : require("./assets/images/express.png")
     },
     {
-      skillName: "sql-database",
-      fontAwesomeClassname: "fas fa-database"
+      skillName: "socket.io",
+      image : require("./assets/images/socketio.png")
     },
     {
-      skillName: "aws",
-      fontAwesomeClassname: "fab fa-aws"
+      skillName: "Django",
+      image : require("./assets/images/django.png")
     },
+
     {
       skillName: "firebase",
-      fontAwesomeClassname: "fas fa-fire"
+      image : require("./assets/images/firebase.png")
+    },
+    {
+      skillName: "unity",
+      image : require("./assets/images/unity.png")
     },
     {
       skillName: "python",
-      fontAwesomeClassname: "fab fa-python"
+      image : require("./assets/images/python.png")
     },
     {
-      skillName: "docker",
-      fontAwesomeClassname: "fab fa-docker"
-    }
+      skillName: "c#",
+      image : require("./assets/images/csharp.png")
+    },
+    
+
   ],
   display: true // Set false to hide this section, defaults to true
 };
@@ -151,53 +141,16 @@ const techStack = {
   viewSkillBars: true, //Set it to true to show Proficiency Section
   experience: [
     {
-      Stack: "Frontend/Design", //Insert stack or technology you have experience in
-      progressPercentage: "90%" //Insert relative proficiency in percentage
+      Stack: "Frontend", //Insert stack or technology you have experience in
+      progressPercentage: "60%" //Insert relative proficiency in percentage
     },
-    {
-      Stack: "Backend",
-      progressPercentage: "70%"
-    },
-    {
-      Stack: "Programming",
-      progressPercentage: "60%"
-    }
   ],
   displayCodersrank: false // Set true to display codersrank badges section need to changes your username in src/containers/skillProgress/skillProgress.js:17:62, defaults to false
 };
 
 // Work experience section
 
-const workExperiences = {
-  display: true, //Set it to true to show workExperiences Section
-  experience: [
-    {
-      role: "Software Engineer",
-      company: "Facebook",
-      companylogo: require("./assets/images/facebookLogo.png"),
-      date: "June 2018 – Present",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-      descBullets: [
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
-      ]
-    },
-    {
-      role: "Front-End Developer",
-      company: "Quora",
-      companylogo: require("./assets/images/quoraLogo.png"),
-      date: "May 2017 – May 2018",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-    },
-    {
-      role: "Software Engineer Intern",
-      company: "Airbnb",
-      companylogo: require("./assets/images/airbnbLogo.png"),
-      date: "Jan 2015 – Sep 2015",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-    }
-  ]
-};
+
 
 /* Your Open Source Section to View Your Github Pinned Projects
 To know how to get github key look at readme.md */
@@ -210,31 +163,56 @@ const openSource = {
 // Some big projects you have worked on
 
 const bigProjects = {
-  title: "Big Projects",
-  subtitle: "SOME STARTUPS AND COMPANIES THAT I HELPED TO CREATE THEIR TECH",
+  title: "프로젝트",
+  subtitle: "Front-end를 담당한 프로젝트",
   projects: [
     {
-      image: require("./assets/images/saayaHealthLogo.webp"),
-      projectName: "Saayahealth",
-      projectDesc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+      image:  require("./assets/images/macju.png"),
+      projectName: "MacJu 프로젝트",
+      projectDesc: "사용자 사용 로그 기반 맥주 큐레이팅 서비스",
       footerLink: [
         {
-          name: "Visit Website",
-          url: "http://saayahealth.com/"
+          name: "MacJu github으로 이동",
+          url: "https://github.com/kimhyunsong/MacJu-Project"
         }
         //  you can add extra buttons here.
       ]
     },
     {
-      image: require("./assets/images/nextuLogo.webp"),
-      projectName: "Nextu",
-      projectDesc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+      image:  require("./assets/images/movi.jpg"),
+      projectName: "영화추천 프로젝트",
+      projectDesc: "vue.js와 Django를 이용해 백엔드와 프론트엔드 서버 구축",
       footerLink: [
         {
-          name: "Visit Website",
-          url: "http://nextu.se/"
+          name: "영화추천 서비스 Gitlab으로 이동",
+          url: "https://lab.ssafy.com/ssong_14/final-pjt"
         }
       ]
+    }
+  ],
+  display: true // Set false to hide this section, defaults to true
+};
+const otherProjects = {
+
+  subtitle: "그 외 프로젝트",
+  projects: [
+    {
+      image:  require("./assets/images/iot.jpg"),
+      projectName: "IoT 프로젝트",
+      projectDesc: "박물관 도슨트 로봇 프로젝트",
+      footerLink: [
+        {
+          name: "박물관 안내 프로젝트 Gitlab으로 이동",
+          url: "https://lab.ssafy.com/s06-iot-control-sub2/S06P22C108"
+        }
+        //  you can add extra buttons here.
+      ]
+    },
+    {
+      image:  require("./assets/images/unityimg.jpg"),
+      projectName: "SSAFY SCHOOL",
+      projectDesc: "SSAFY 교육프로그램내 메타버스 플랫폼",
+      
     }
   ],
   display: true // Set false to hide this section, defaults to true
@@ -244,56 +222,37 @@ const bigProjects = {
 // Include certificates, talks etc
 
 const achievementSection = {
-  title: emoji("Achievements And Certifications 🏆 "),
+  title: emoji("수상경력 🏆 "),
   subtitle:
-    "Achievements, Certifications, Award Letters and Some Cool Stuff that I have done !",
+    "교육프로그램내 수상경력",
 
   achievementsCards: [
     {
-      title: "Google Code-In Finalist",
+      title: "맥주 큐레이팅 서비스",
       subtitle:
-        "First Pakistani to be selected as Google Code-in Finalist from 4000 students from 77 different countries.",
-      image: require("./assets/images/codeInLogo.webp"),
-      footerLink: [
-        {
-          name: "Certification",
-          url: "https://drive.google.com/file/d/0B7kazrtMwm5dYkVvNjdNWjNybWJrbndFSHpNY2NFV1p4YmU0/view?usp=sharing"
-        },
-        {
-          name: "Award Letter",
-          url: "https://drive.google.com/file/d/0B7kazrtMwm5dekxBTW5hQkg2WXUyR3QzQmR0VERiLXlGRVdF/view?usp=sharing"
-        },
-        {
-          name: "Google Code-in Blog",
-          url: "https://opensource.googleblog.com/2019/01/google-code-in-2018-winners.html"
-        }
-      ]
+        "[2학기]프로젝트 광주 1반 2등, 맥주라는 접근성 높은 컨텐츠와 다양한 데이터베이스로 가장 많은 리뷰를 받기도 함.",
+      image: require("./assets/images/macju.png"),
+     
     },
     {
-      title: "Google Assistant Action",
+      title: "박물관 도슨트 로봇",
       subtitle:
-        "Developed a Google Assistant Action JavaScript Guru that is available on 2 Billion devices world wide.",
-      image: require("./assets/images/googleAssistantLogo.webp"),
-      footerLink: [
-        {
-          name: "View Google Assistant Action",
-          url: "https://assistant.google.com/services/a/uid/000000100ee688ee?hl=en"
-        }
-      ]
+        "[2학기]프로젝트 광주 1반 3등, 라이다, 카메라를 활용해 맵, 사람 인식 및 follow, 자율 주행 ROS 통신",
+      image: require("./assets/images/iot.jpg"),
     },
 
-    {
-      title: "PWA Web App Developer",
-      subtitle: "Completed Certifcation from SMIT for PWA Web App Development",
-      image: require("./assets/images/pwaLogo.webp"),
-      footerLink: [
-        {name: "Certification", url: ""},
-        {
-          name: "Final Project",
-          url: "https://pakistan-olx-1.firebaseapp.com/"
-        }
-      ]
-    }
+    // {
+    //   title: "곧 받을 예정",
+    //   subtitle: "Completed Certifcation from SMIT for PWA Web App Development",
+    //   image: require("./assets/images/pwaLogo.webp"),
+    //   footerLink: [
+    //     {name: "Certification", url: ""},
+    //     {
+    //       name: "Final Project",
+    //       url: "https://pakistan-olx-1.firebaseapp.com/"
+    //     }
+    //   ]
+    // }
   ],
   display: true // Set false to hide this section, defaults to true
 };
@@ -352,9 +311,10 @@ export {
   skillsSection,
   educationInfo,
   techStack,
-  workExperiences,
+  
   openSource,
   bigProjects,
+  otherProjects,
   achievementSection,
   blogSection,
   contactInfo,
