@@ -55,10 +55,13 @@ export default function Greeting() {
               <DisplayLottie animationData={landingPerson} />
             ) : (
               <img
-                alt="man sitting on table"
+                alt="hyunsong"
                 src={require("../../assets/images/KakaoTalk_20220523_213343348.jpg")}
               ></img>
+              
             )}
+            <img src={require("../../assets/images/KakaoTalk_20220526_173223461.jpg")}></img>
+            
           </div>
         </div>
       </div>

@@ -130,7 +130,7 @@ const educationInfo = {
       schoolName: "Samsung Software Academy For Youth",
       logo: require("./assets/images/ssafyLogo.png"),
       subHeader: "삼성 청년 소프트웨어 아카데미",
-      duration: "July 2021 - ing...",
+      duration: "싸피레이스(자율주행 알고리즘 대회) 수상, 공통 프로젝트 우수상, 특화 프로젝트 우수상, July 2021 - ing...",
     }
   ]
 };
